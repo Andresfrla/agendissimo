@@ -28,7 +28,9 @@ const Hero = () => {
                 width={1200}
                 height={1200}
                 alt="Jenn"
-                className="bg-gradient-to-b"
+                style={{
+                    maskImage: 'linear-gradient(black 85%, transparent)'
+                  }}
             />
         </div>
     </div>

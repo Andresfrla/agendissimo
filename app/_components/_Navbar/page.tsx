@@ -6,7 +6,7 @@ import { AiOutlineForm, AiOutlineUser } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <nav className='bg-[#010101] flex flex-row justify-between border-b border-[#e7d9d9] fixed w-full'>
+    <nav className='bg-[#010101] flex flex-row justify-between border-b border-[#e7d9d9] fixed w-full z-50'>
         <a href='/'>
             <Image
                 src={logo}

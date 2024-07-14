@@ -5,7 +5,7 @@ import { Button } from "@chakra-ui/react"
 
 const Hero = () => {
   return (
-    <div className="pt-36 flex"
+    <div className="pt-36 flex md:flex-row sm:flex-col"
     style={{
         backgroundImage: `url(${bg.src})`,
         backgroundSize: "cover",

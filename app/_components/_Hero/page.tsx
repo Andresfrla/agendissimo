@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundPosition: 'center',
       }}
     >
-        <div className="ml-40 mt-20 pr-20">
+        <div className="ml-40 mt-20 mr-20 bg-slate-100/90 p-10 w-5/12 h-min text-[#010101] rounded-xl text-center">
             <h1 className="text-5xl pb-5">Jenn Villafuerte</h1>
             <h2 className="text-2xl pb-5">Brow and Lash Trainer - Beauty Academy</h2>
             <ul className="flex flex-col space-y-5">
@@ -30,11 +30,11 @@ const Hero = () => {
                     </strong>
                 </li>
             </ul>
-            <p className="text-justify w-2/3 mt-10">
+            <p className="text-justify w-full mt-10">
             Transforma tu pasión por la belleza en una carrera próspera con Jenn Villafuerte, una entrenadora de cejas y pestañas en Beauty Academy. Nuestros cursos completos brindan la base y las habilidades que necesitas para convertirte en una artista de la belleza calificada, especializada en mejoras de cejas y pestañas. Sal de nuestra capacitación listo para transformar el aspecto de tus clientes y aumentar su confianza.
             </p>
 
-            <div className="flex space-x-5 mt-10">
+            <div className="flex space-x-5 mt-10 justify-center">
                 <Button className="bg-[#010101] text-[#f4eeee] p-4 px-5 rounded-xl">
                     Quiero ser una Beauty Artist
                 </Button>
@@ -43,11 +43,11 @@ const Hero = () => {
                 </Button>
             </div>
         </div>
-        <div className="flex pr-20 pt-20 mb-20">
+        <div className="flex pr-20 pt-5 mb-20 ml-40">
             <Image
                 src={Jenn}
-                width={1400}
-                height={1200}
+                width={500}
+                height={600}
                 alt="Jenn"
                 style={{
                     maskImage: 'linear-gradient(black 85%, transparent)'

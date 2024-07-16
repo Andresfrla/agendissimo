@@ -10,7 +10,7 @@ const AboutIntro = () => {
             <Image
                 src={BrowTraining}
                 alt="Brows Training"
-                width={300}
+                width={400}
                 height={300}
                 priority
                 className='rounded-xl'

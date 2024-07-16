@@ -16,7 +16,7 @@ const FollowMeOnIg = () => {
       </div>
         <div className='w-1/3'>
             <h3 className='text-4xl text-bold text-[#010101] mt-5'>
-                Siguenos en instagram
+                Sigueme en instagram
             </h3>
             <Image
                 src={Jenn}

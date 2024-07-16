@@ -48,7 +48,7 @@ const TestimonialsIntro = () => {
             </Card>
         </div>
 
-        <Button className='bg-[#e7d9d9] rounded-md p-5 text-[#010101] mt-5 mb-10'>
+        <Button className='bg-[#e7d9d9] rounded-md p-5 text-[#010101] mt-5 mb-20 text-3xl px-10'>
             Descubre mas historias inspiradoras
         </Button>
     </div>

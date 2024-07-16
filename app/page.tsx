@@ -1,4 +1,5 @@
 import AboutIntro from "./_components/_AboutIntro/page";
+import Footer from "./_components/_Footer/page";
 import Hero from "./_components/_Hero/page";
 import Navbar from "./_components/_Navbar/page";
 import SocialContent from "./_components/_SocialContent/page";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutIntro/>
       <SocialContent/>
       <TestimonialsIntro/>
+      <Footer />
     </main>
   );
 }

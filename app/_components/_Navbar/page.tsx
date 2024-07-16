@@ -19,22 +19,22 @@ const Navbar = () => {
 
         <div className='flex items-center space-x-5'>
             <Link 
-                href="/"
+                href="/Conoceme"
             >
-                Conocenos
+                Conoceme
             </Link>
             <Link 
-                href="/"
+                href="/Servicios"
             >
                 Servicios
             </Link>
             <Link 
-                href="/"
+                href="/Testimonios"
             >
                 Testimonios
             </Link>
             <Link 
-                href="/"
+                href="/Cursos"
             >
                 Cursos
             </Link>

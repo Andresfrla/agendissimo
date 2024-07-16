@@ -12,7 +12,7 @@ const TestimonialsIntro = () => {
                 Testimonios
             </AbsoluteCenter>
         </Box>
-        <h4 className='text-4xl mt-10 mb-20'>Esto dicen mis alumnas</h4>
+        <h4 className='text-4xl mt-10 mb-20 font-bold'>Esto dicen mis alumnas</h4>
         <div className='flex flex-row space-x-20 mb-10'>
             <Card>
                 <Image

@@ -1,4 +1,5 @@
 import AboutIntro from "./_components/_AboutIntro/page";
+import FollowMeOnIg from "./_components/_FollowMeOnIg/page";
 import Footer from "./_components/_Footer/page";
 import Hero from "./_components/_Hero/page";
 import Navbar from "./_components/_Navbar/page";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <AboutIntro/>
       <SocialContent/>
+      <FollowMeOnIg />
       <TestimonialsIntro/>
       <Footer />
     </main>

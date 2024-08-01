@@ -1,4 +1,8 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+// Configura dotenv para cargar las variables de entorno desde el archivo .env.local
+dotenv.config();
 
 const MONGODB_URI = process.env.MONGODB_URI as string;
 
@@ -40,3 +44,4 @@ async function connectToDatabase() {
 }
 
 export default connectToDatabase;
+

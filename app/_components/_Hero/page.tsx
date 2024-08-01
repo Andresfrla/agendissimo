@@ -30,6 +30,7 @@ const Hero = () => {
                     </strong>
                 </li>
             </ul>
+
             <p className="text-justify w-full mt-10">
             Transforma tu pasión por la belleza en una carrera próspera con Jenn Villafuerte, una entrenadora de cejas y pestañas en Beauty Academy. Nuestros cursos completos brindan la base y las habilidades que necesitas para convertirte en una artista de la belleza calificada, especializada en mejoras de cejas y pestañas. Sal de nuestra capacitación listo para transformar el aspecto de tus clientes y aumentar su confianza.
             </p>

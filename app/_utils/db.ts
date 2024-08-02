@@ -31,12 +31,18 @@ cached = global.mongoose;
 
 async function connectToDatabase() {
   if (cached.conn) {
+    console.log('Using existing database connection');
     return cached.conn;
   }
 
   if (!cached.promise) {
+    console.log('Creating new database connection');
     cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => {
+      console.log('Database connected');
       return mongoose;
+    }).catch((error) => {
+      console.error('Database connection error:', error);
+      throw error;
     });
   }
   cached.conn = await cached.promise;
@@ -44,4 +50,3 @@ async function connectToDatabase() {
 }
 
 export default connectToDatabase;
-

@@ -46,6 +46,14 @@ async function connectToDatabase() {
     });
   }
   cached.conn = await cached.promise;
+
+  const connectionState = mongoose.connection.readyState;
+  if (connectionState === 1) {
+    console.log('Database is connected');
+  } else {
+    console.log('Database is not connected');
+  }
+  
   return cached.conn;
 }
 

@@ -9,7 +9,7 @@ const BeVietnamPro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   title: "JeBlush | Transformando miradas",
-  description: "Conocenos y transforma tu mirada",
+  description: "Conócenos y transforma tu mirada",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
+      <html lang="es">
         <body className={BeVietnamPro.className}>{children}</body>
       </html>
   );

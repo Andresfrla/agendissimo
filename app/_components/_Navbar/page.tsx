@@ -41,9 +41,14 @@ const Navbar = () => {
         </div>
 
         <div className='flex items-center mr-5 space-x-5'>
-        <Button colorScheme='teal' size='sm' className='rounded-md p-2'>
-                <AiOutlineForm className='mr-2 size-6' />Registrate
+            <Link
+                    href="/Registrate"
+                >
+            <Button colorScheme='teal' size='sm' className='rounded-md p-2'>
+                
+                    <AiOutlineForm className='mr-2 size-6' />Registrate
             </Button>
+            </Link>
             <Button colorScheme='teal' size='sm' className='bg-[#e7d9d9] rounded-md p-2 text-[#010101]'>
                 <AiOutlineUser className='mr-2 size-6'/>Iniciar Sesión
             </Button>

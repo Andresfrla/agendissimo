@@ -46,63 +46,47 @@ const videos = [
 
 const SocialContent = () => {
   useEffect(() => {
-    // Load the TikTok embed script
-    const script = document.createElement('script');
-    script.src = 'https://www.tiktok.com/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
+    const handlePermissionsPolicyViolation = () => {
+      console.error('Permissions policy violation');
+    };
+
+    window.addEventListener('securitypolicyviolation', handlePermissionsPolicyViolation);
 
     return () => {
-      // Clean up script if component unmounts
-      document.body.removeChild(script);
+      window.removeEventListener('securitypolicyviolation', handlePermissionsPolicyViolation);
     };
   }, []);
 
   return (
-    <div className='flex pt-10'>
-      {videos.map((video, index) => (
-        <blockquote
-          key={index}
-          className="tiktok-embed"
-          cite={video.cite}
-          data-video-id={video.videoId}
-          style={{ maxWidth: '605px', minWidth: '325px' }}
-        >
-          <section>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              title={video.author}
-              href={video.authorLink}
-            >
-              {video.author}
-            </a>
-            {video.description}
-            {video.tags.map((tag, tagIndex) => (
-              <a
-                key={tagIndex}
-                title={tag.slice(1)}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://www.tiktok.com/tag/${tag.slice(1)}?refer=embed`}
-              >
-                {tag}
-              </a>
-            ))}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              title={video.music}
-              href={video.musicLink}
-            >
-              {video.music}
-            </a>
-          </section>
-        </blockquote>
+    <div>
+      {videos.map((video) => (
+        <div key={video.videoId} className="tiktok-video">
+          <iframe
+            src={`https://www.tiktok.com/embed/v2/${video.videoId}?referer=https://example.com&embed_source=embed`}
+            frameBorder="0"
+            allowFullScreen
+            width="100%"
+            height="500px"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+          />
+          <div className="video-info">
+            <h2>{video.description}</h2>
+            <p>
+              {video.tags.map((tag, index) => (
+                <span key={index}>#{tag}</span>
+              ))}
+            </p>
+            <p>
+              Music: <a href={video.musicLink}>{video.music}</a>
+            </p>
+            <p>
+              Author: <a href={video.authorLink}>{video.author}</a>
+            </p>
+          </div>
+        </div>
       ))}
     </div>
   );
 };
-
 export default SocialContent;
 

@@ -21,10 +21,31 @@ const Footer = () => {
         <div className='text-[#010101] text-xl ml-20 mt-10 w-1/4'>
             <h4 className='mb-4 font-bold'>Acceso rapido</h4>
             <ul className='text-base space-y-4'>
-                <li className='flex items-center'><AiFillUpCircle className='size-6 mr-3' /> Inicio</li>
-                <li className='flex items-center'><AiFillSketchCircle className='size-6 mr-3'/> Conoceme</li>
+                <li className='flex items-center'>
+                    <Link
+                        href="/"
+                        className='flex items-center'
+                    >
+                    <AiFillUpCircle className='size-6 mr-3' />
+                    Inicio
+                    </Link>
+                </li>
+                <li className='flex items-center'><AiFillSketchCircle className='size-6 mr-3'/>
+                    <Link
+                        href="/conoceme"
+                        className='flex items-center'
+                    >
+                        Conoceme
+                    </Link>
+                </li>
                 <li className='flex items-center'><AiFillProfile className='size-6 mr-3'/> Servicios</li>
-                <li className='flex items-center'><AiFillRead className='size-6 mr-3'/> Cursos</li>
+                <li className='flex items-center'><AiFillRead className='size-6 mr-3'/>
+                    <Link
+                        href="/"
+                    >
+                        Cursos
+                    </Link>
+                </li>
             </ul>
         </div>
         <div className='flex flex-col w-1/4 mt-10 space-x-5'>

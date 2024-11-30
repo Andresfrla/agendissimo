@@ -50,8 +50,12 @@ const Footer = () => {
         </div>
         <div className='flex flex-col w-1/4 mt-10 space-x-5'>
             <div className='flex'>
-                <AiFillTikTok className='fill-[#010101] size-14'/>
-                <AiFillInstagram className='fill-[#010101] size-14'/>
+                <Link href="https://www.tiktok.com/@jeblushbyjenn">
+                    <AiFillTikTok className='fill-[#010101] size-14'/> 
+                </Link>
+                <Link href="https://www.instagram.com/jeblushbyjenn/">
+                    <AiFillInstagram className='fill-[#010101] size-14'/>
+                </Link>
             </div>
             <div className='flex text-[#010101] mt-5'>
                 <AiFillPhone className='fill-[#010101] size-7 mr-5'/>

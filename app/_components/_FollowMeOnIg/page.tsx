@@ -19,14 +19,17 @@ const FollowMeOnIg = () => {
                 Sigueme en instagram
             </h3>
             <Image
-                src={Jenn}
-                width={400}
-                height={600}
-                alt="Jenn"
-                style={{
-                    maskImage: 'linear-gradient(black 85%, transparent)'
-                  }}
-            />
+              src={Jenn}
+              alt="Jenn"
+              style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  objectFit: 'cover',
+                  aspectRatio: '2 / 3',
+                  maskImage: 'linear-gradient(black 85%, transparent)',
+                  WebkitMaskImage: 'linear-gradient(black 85%, transparent)',
+              }}
+        />
         </div>
     </div>
   )

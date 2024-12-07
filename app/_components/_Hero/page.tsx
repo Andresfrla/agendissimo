@@ -45,15 +45,18 @@ const Hero = () => {
             </div>
         </div>
         <div className="flex pr-20 pt-5 mb-20 ml-40">
-            <Image
-                src={Jenn}
-                width={500}
-                height={600}
-                alt="Jenn"
-                style={{
-                    maskImage: 'linear-gradient(black 85%, transparent)'
-                  }}
-            />
+        <Image
+    src={Jenn}
+    alt="Jenn"
+    style={{
+        maxWidth: '100%',
+        height: 'auto',
+        objectFit: 'cover',
+        aspectRatio: '5 / 6',
+        maskImage: 'linear-gradient(black 85%, transparent)',
+        WebkitMaskImage: 'linear-gradient(black 85%, transparent)',
+    }}
+/>
         </div>
     </div>
   )
